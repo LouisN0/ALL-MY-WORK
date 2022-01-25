@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+/* Exercice 1 */
+
+.container {
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    margin-top: 20px;
+    flex: 1;
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.animation {
+    position: absolute;
+    width: 80%;
+    background-color: rgba(185, 184, 184, 0.342);
+    height: 25px;
+    top: 46px;
+    animation: surligner 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes surligner {
+    0% {
+        top: 46px;
+    }
+
+    100% {
+        top: 185px;
+    }
+}
+
+.col-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.rouge {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid black;
+    animation: change-background 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes change-background {
+
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+/* Exercice 2 */
+
+.col-4{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.carre{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: all 2s;
+}
+
+.col-4:first-child:hover .carre{
+    transform: rotateX(180deg);
+}
+
+.col-4:nth-child(2):hover .carre{
+    transform: rotateY(180deg);
+}
+
+.col-4:nth-child(3):hover .carre{
+    transform: rotateZ(180deg);
+}

@@ -1,0 +1,103 @@
+#h1{
+    position: relative;
+    max-width: max-content;
+    cursor: pointer;
+}
+#h1::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 3px;
+    background-color: black;
+    width: 0%;
+    transition: width 1s;
+    
+}
+#h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 0%;
+    background-color: black;
+    width: 3px;
+    transition: height 1s;
+    transition-delay: 1s;
+    
+}
+#h1::after::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    height: 3px;
+    background-color: black;
+    width: 0%;
+    transition: width 1s;
+    transition-delay: 1s;
+    
+}
+#h1:hover::after::after{
+    width: 100%;
+}
+#h1:hover::after{
+    height: 100%;
+}
+#h1:hover::before{
+    width: 100%;
+}
+#h2{
+    position: relative;
+    max-width: max-content;
+    cursor: pointer;
+}
+#h2::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 3px;
+    right: 50%;
+    background-color: black;
+    width: 0%;
+    transition: width 1s;
+    
+}
+#h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background-color: black;
+    width: 0%;
+    left: 50%;
+    transition: width 1s;
+}
+#h2:hover::before, #h2:hover::after{
+    width: 50%;
+}
+#h3{
+    position: relative;
+    max-width: max-content;
+    cursor: pointer;
+}
+#h3::before{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    height: 0%;
+    transition: height 1s;
+    opacity: 0.5;
+}
+#h3:hover::before{
+    height: 100%;
+}
+#h4{
+    position: relative;
+    max-width: max-content;
+    cursor: pointer;
+    top: -178px;
+    opacity: 0;
+    
+}

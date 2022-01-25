@@ -1,0 +1,35 @@
+div {
+  animation: carre 5s;
+
+}
+
+@keyframes carre {
+    0%{
+      left: 0px;
+    }
+    25%{
+      left: 200px;
+    }
+    50%{
+      top: 200px;
+    }
+    75%{
+      left: 0px;
+    }
+    100%{
+      top: 0px;
+    }
+}
+
+#bounce-title{
+  animation: bounce 3s ease infinite;
+  font-size: 60pt;
+}
+
+@keyframes bounce {
+  0%   { transform: scaleY(1)    translateY(0); }
+  10%  { transform: scaleY(.7) translateY(50px); }
+  30%  { transform: scaleY(1.2) translateY(-200px); }
+  50%  { transform: scaleY(.7) translateY(50px); }
+  100% { transform: scaleY(1)    translateY(0); }
+}

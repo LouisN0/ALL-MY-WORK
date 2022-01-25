@@ -1,0 +1,29 @@
+header{
+    height: 100px;
+    background-color: blue;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.container{
+    height: 78vh;
+    display:flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.container>nav{
+    display: flex;
+    flex: 2;
+}
+.container>*{
+    display: flex;
+    flex: 1;
+    background-color: orangered;
+    border-radius: 12px;
+}
+
+footer{
+    height: 100px;
+    background-color: blue;
+    border-radius: 12px;
+    margin-top: 10px;
+}

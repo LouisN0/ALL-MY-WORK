@@ -1,0 +1,93 @@
+nav ul{
+    display:flex;
+    justify-content: space-around; 
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1250px){
+    ul:first-of-type>li:nth-of-type(1){
+        color: blue;
+    }
+    ul:first-of-type>li:nth-of-type(2){
+        color: green;
+    }
+}
+@media screen and (max-width: 1249px){
+    ul:nth-of-type(2)>li:nth-of-type(1){
+        color: orange;
+    }
+    ul:nth-of-type(2)>li:nth-of-type(2){
+        color: red;
+    }
+}
+@media screen and (max-width: 999px){
+    ul:nth-of-type(3)>li:nth-of-type(1){
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+@media screen and (min-width: 1250px){
+    ul:nth-of-type(3)>li:nth-of-type(2){
+        font-style: italic;
+        color: blue;
+    }
+}
+@media screen and (max-width: 799px){
+    h2:nth-of-type(4){
+        border: solid black 3px;
+        color: green;
+    }
+}
+@media screen and (min-width: 900px){
+    h2:nth-of-type(4){
+        border: solid black 3px;
+        color: green;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1250px){
+    h2:nth-of-type(5){
+        color: red;
+        border: solid black 2px;
+    }
+    ul:nth-of-type(5)>li{
+        color: red;
+        border: solid black 2px;
+    }
+}
+#exo6{
+    background-image: url(../images/tartine.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+}
+@media screen and (max-width: 900px){
+    #exo6{
+        height: 125px;
+        width: 125px; 
+    }
+}
+@media print {
+    h2{
+        color: black;
+    }
+    div{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    nav>ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav>ul>li>a:hover{
+        color: orange;
+    }
+}
+@media screen and (min-width: 1250px){
+    nav>ul>li>a{
+        font-size: 42pt;
+    }
+    nav>ul>li>a:hover{
+        color: green;
+    }
+}

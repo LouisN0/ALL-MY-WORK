@@ -1,0 +1,18 @@
+div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    
+}
+.cont{
+    background-color:red ;
+    flex: 1;
+    height: 20vh;
+}
+p{
+    margin: auto;
+}
+.cont4{
+    flex: 2;
+}

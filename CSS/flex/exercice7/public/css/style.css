@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div{
+    width: 65vh;
+    height: 32vh;
+    background-color: red;
+
+}
+div:nth-of-type(3n + 1){
+    background-color: black;
+
+}
+div:nth-of-type(3n + 2){
+    background-color: yellow;
+
+}

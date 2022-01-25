@@ -1,0 +1,20 @@
+section{
+    height: 21vh;
+    display:flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+p{
+    margin: auto;
+    padding: 40px;
+}
+.cont3{
+    background-color: orangered;
+    flex: 3;
+    height: 20vh;
+    display: flex;
+}
+.box3{
+    flex: 3;
+}
