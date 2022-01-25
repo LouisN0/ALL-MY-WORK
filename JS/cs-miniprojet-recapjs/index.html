@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center bg-dark text-white mt-5">Javascript DOM</h1>
+
+        <nav class="row mt-5">
+            <button class="col-lg-2 bouton">Exercice 1</button>
+            <button class="col-lg-2 bouton">Exercice 2</button>
+            <button class="col-lg-2 bouton">Exercice 3</button>
+            <button class="col-lg-2 bouton">Exercice 4</button>
+            <button class="col-lg-2 bouton">Exercice 5</button>
+            <button class="col-lg-2 bouton">Exercice 6</button>
+        </nav>
+<!-- section 1 -->
+        <section class="container mt-5">
+            <h2 id="firstH2" class="mt-5">titre</h2>
+            <p>list de propriété et méthode à retrouver dans la documentation</p>
+            <ul>
+                <li>innerText</li>
+                <li>innerHTML</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+                <li>style</li>
+                <li>classList</li>
+            </ul>
+            <p>Changer le contenu du h2 par "le titre modifié"<br>changer la couleur du h2 (la couleur que vous voulez)<br>Ajouter une class background bootstrap au h2</p>
+        </section>
+<!-- section 2 -->
+        <section class="container mt-5">
+            <p class="mt-5 mb-5 text-center">Mettre un écouteur d'évènement sur les bouttons nav et changer le panel en conséquence</p>
+        </section>
+<!-- section 3 -->
+        <section class="container mt-5">
+            <h2 class="mt-5 mb-5 text-center">welcome inconnu</h2>
+            <p class="mb-5 text-center">écriver dans l'input ci-dessous le nom de la personne que vous voullez accueillir<br>lorsque vous cliquez sur le boutton "go" le nom que vous avez ajouter dans l'input sera alors mis dans le span de h2 et l'input sera alors vidé de<br>tout contenu. Attention, interdiction de toucher à l'html</p>
+            <div class="d-flex align-items-center justify-content-center mb-5">
+                <input type="text" value="">
+                <button class="mx-3"id="btnGO">GO</button>
+            </div>
+        </section>
+<!-- section 4 -->
+        <section class="container mt-5">
+            <h2 class="mt-5">Déplacer les éléments</h2>
+            <div class="d-flex justify-content-center mt-5">
+                <div class="bg-dark w-50 mx-5 cont d-flex justify-content-center align-items-center">
+                    <div class="bg-white" id="carre"></div>
+                </div>
+                <div class="bg-dark w-50 mx-5 cont d-flex justify-content-center align-items-center">
+                    <div class="bg-white" id="carre2"></div>
+                </div>
+            </div>
+            <div  class="d-flex justify-content-center mt-5">
+                <button class="mx-3">Change de place</button>
+                <button class="mx-3">nombre de click 0</button>
+            </div>
+        </section>
+<!-- section5 -->
+        <section class="container mt-5">
+            <h2>Générer des éléments du DOM</h2>
+            <p>Cliquer sur le bouton ci-dessous pour générer des oeufs.</p>
+            <button id="pushoeuf">Ajouter un oeuf</button>
+            <div id="taboeuf"></div>
+        </section>
+<!-- section6 -->
+        <section class="container mt-5">
+            <h2>Création calculatrice</h2>
+            <h3>Niveau 1</h3>
+            <div class="d-flex">
+                <input id="valeur1" type="text">
+                <p>+</p>
+                <input id="valeur2" type="text">
+                <button id="egale">=</button>
+                <p id="resultat"></p>
+            </div>
+            <h3>Niveau 2</h3>
+            <div class="w-25">
+                <p id="calc"></p>
+                <input id="inputCalc" class="w-100 mb-4" type="text">
+                <div class="row">
+                    <button id="un" class="col-lg-3">1</button>
+                    <button id="deux" class="col-lg-3">2</button>
+                    <button id="trois" class="col-lg-3">3</button>
+                    <button id="plus" class="col-lg-3">+</button>
+                    <button id="quatre" class="col-lg-3">4</button>
+                    <button id="cinq" class="col-lg-3">5</button>
+                    <button id="six" class="col-lg-3">6</button>
+                    <button id="moins" class="col-lg-3">-</button>
+                    <button id="sept" class="col-lg-3">7</button>
+                    <button id="huit" class="col-lg-3">8</button>
+                    <button id="neuf" class="col-lg-3">9</button>
+                    <button id="fois" class="col-lg-3">*</button>
+                    <button id="clear" class="col-lg-3">c</button>
+                    <button id="zero" class="col-lg-3">0</button>
+                    <button id="egale2" class="col-lg-3">=</button>
+                    <button id="divi" class="col-lg-3">/</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
