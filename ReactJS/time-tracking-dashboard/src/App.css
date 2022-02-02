@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: local('Rubik'), url('./font/Rubik/Rubik-Regular.ttf') format('truetype');
+}
+
+.divSize{
+    width: 72vw;
+    height: 70vh;
+    display: flex;
+  }
+  
+.div1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.div2{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 31.8%);
+    grid-template-rows: repeat(2, 47.5%);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  
+.premierBlock{
+    width: 90%;
+    height: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    
+  }
+  
+.premierBlockChild{
+    width: 100%;
+    height: 60%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.divGridChild{
+    width: 100%;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+.div1grid{
+    grid-area: 1 / 1 / 2 / 2;
+    width:100%;
+    border-radius:20px;
+    background-color:hsl(15, 100%, 70%);
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.div2grid{
+    grid-area: 1 /2 / 2 / 3;
+    width:100%;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 20px;
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.div3grid{
+    grid-area: 1 / 3 / 2 / 4;
+    width:100%;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 20px;
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.div4grid{
+    grid-area: 2 / 3 / 3 / 4;
+    width:100%;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 20px;
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.div5grid{
+    grid-area: 2 / 2 / 3 / 3;
+    width:100%;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 20px;
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.div6grid{
+    grid-area: 2 / 1 / 3 / 2;
+    width:100%;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 20px;
+    display:flex;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+  }
+.imgW{
+    width:25%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  
+.displayFlex{
+    width:80%;
+    height: 80%;
+  }
+  
+.mMax{
+    margin: 25%;
+  }
+  
+.grandText{
+    font-size: 40pt;
+    color: white;
+    margin: 0;
+    font-family: Rubik-regular;
+  }
+  
+.moyenText{
+    font-size: 20pt;
+    color: white;
+    margin: 5px;
+    font-family: Rubik-regular;
+  }
+  
+.petitText{
+    font-size: 14pt;
+    color:gray;
+    font-family: Rubik-regular;
+  }
+  
+.svgStyle{
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    z-index: 1;
+  }
