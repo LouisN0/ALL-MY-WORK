@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'lemon-Bold';
+  src: local('LEMONMILK'), url('./font/LEMONMILK/LEMONMILK-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'lemon-Regular';
+  src: local('LEMONMILK'), url('./font/LEMONMILK/LEMONMILK-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'lemon-Medium';
+  src: local('LEMONMILK'), url('./font/LEMONMILK/LEMONMILK-Medium.otf') format('opentype');
+}
+body{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(155,70,252,1) 100%);
+  margin: 0;
+  padding: 0;
+  display:grid;
+  place-items:center;
+}
+#title{
+  text-align: center;
+  font-family: 'lemon-Bold';
+  color: white;
+  font-size: 3em;
+  width: 60vw;
+  margin-top: 0;
+  margin-bottom: 10vh;
+  
+}
+.player{
+  text-align: center;
+  font-family: 'lemon-Bold';
+  color: white;
+  font-size: 2em;
+}
+#rock{
+  background: url(./img/rock.png);
+  width:20%;
+  height:100%;
+  background-size:cover;
+  border-radius: 35%;
+  cursor:pointer;
+}
+#paper{
+  background: url(./img/paper.png);
+  width:20%;
+  height:100%;
+  background-size:cover;
+  border-radius: 35%;
+  cursor:pointer;
+}
+#sisccor{
+  background: url(./img/sisccor.png);
+  width:20%;
+  height:100%;
+  background-size:cover;
+  border-radius: 35%;
+  cursor:pointer;
+}
+#game{
+  height:230px;
+  display: flex;
+  justify-content:space-around;
+  margin-top: 10vh;
+}
+#flex{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 10vh;
+}
+#hr{
+  color: white;
+  height: 5px;
+  background-color: white;
+  border-radius: 20px
+}
+#taille{
+  height:38vh;
+  width:60vw
+}
