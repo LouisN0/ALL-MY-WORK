@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'porsha-Bold';
+    src: local('PORSHA'), url('./font/PORSHA/911porschav3bold.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'porsha-Regular';
+    src: local('PORSHA'), url('./font/PORSHA/911porschav3.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'lemon-Regular';
+    src: local('LEMONMILK'), url('./font/LEMONMILK/LEMONMILK-Regular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'bebas-Regular';
+    src: local('BEBAS'), url('./font/BEBAS/BebasNeue-Regular.ttf') format('truetype');
+  }
+
+body{
+    background-color: #f4fefe;
+}
+.voituresIMG{
+    width: 100%;
+}
+.titre{
+    font-family: 'porsha-Bold';
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1vh;
+    margin-top:2vh;
+}
+
+.wallet{
+    align-items: center;
+    font-family: 'porsha-Regular';
+    font-size: 2em;
+    text-align: center;
+    margin-top:1vh;
+}
+.argent{
+    font-family: 'bebas-Regular';
+    
+}
+.titre2{
+    font-family: 'porsha-Bold';
+    text-align: center;
+    font-size: 4em;
+}
+.btn{
+    width: 100%;
+    height:50px;
+    background-color: black;
+    color: #f4fefe;
+    font-family: 'bebas-Regular';
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.modele{
+    font-family: 'porsha-Regular';
+    font-size: 2em;
+    text-align: center;
+    margin-top:0
+}
+.prix{
+    font-family: 'lemon-Regular';
+    
+}
+.cont{
+    width:30%;
+    
+}
+.supcont{
+    display:flex;
+    gap: 3vw;
+    margin-bottom: 10vh;
+}
+.btnOrange{
+    background-color: black;
+    border: 1.5px solid black;
+    padding:9px;
+    color: orange;
+    font-size:13pt;
+
+}
+.btnRouge{
+    background-color: black;
+    border: 1.5px solid black;
+    padding:9px;
+    color: #DC143C;
+    font-size:13pt;
+
+}
