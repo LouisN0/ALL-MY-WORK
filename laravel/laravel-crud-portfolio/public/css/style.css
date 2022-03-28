@@ -973,6 +973,10 @@ section {
   font-weight: bold;
 }
 
+.content-table thead tr th:hover{
+  color: rgb(20, 157, 221);
+}
+
 .content-table th,
 .content-table td{
   padding: 12px 15px;

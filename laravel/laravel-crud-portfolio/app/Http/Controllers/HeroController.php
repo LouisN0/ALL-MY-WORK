@@ -12,4 +12,17 @@ class HeroController extends Controller
         $heros = Hero::all();
         return view('/pages.backoffice.backoffice', compact('heros'));
     }
+    public function edit($id)
+    {   
+        $heros = Hero::find($id);
+        return view('/pages.backoffice.edit.hero-edit', compact('heros'));
+    }
+    public function update($id, Request $request)
+    {
+        $heros = Hero::find($id);
+        $heros->titre = $request->titre;
+        $heros->attributs = $request->attributs;
+        $heros->save();
+        return redirect()->back();
+    }
 }

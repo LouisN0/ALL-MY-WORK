@@ -13,7 +13,11 @@
                 <th scope="row">{{ $aboutinfo->id }}</th>
                 <td>{{ $aboutinfo->titre }}</td>
                 <td>{{ $aboutinfo->texte }}</td>
+                <td>
+                <a href="/backoffice/edit/aboutinfo-edit/{{ $aboutinfo->id }}"><button class="btn btn-warning">Edit</button></a>
+                </td>
             </tr>
+            
         @endforeach
     </tbody>
 </table>

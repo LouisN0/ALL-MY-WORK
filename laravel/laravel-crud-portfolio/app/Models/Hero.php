@@ -9,4 +9,5 @@ class Hero extends Model
 {
     use HasFactory;
     protected $table = "heros";
+    protected $guarded = ['*'];
 }

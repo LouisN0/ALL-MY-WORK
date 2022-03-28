@@ -13,6 +13,12 @@
                 <th scope="row">{{ $skill->id }}</th>
                 <td>{{ $skill->titre }}</td>
                 <td>{{ $skill->sstitre }}</td>
+                <td>
+                    <a href="/backoffice/edit/skill-edit/{{ $skill->id }}"><button class="btn btn-warning">Edit</button></a>
+                </td>
+                <td>
+                    <a href="/backoffice/show/skill-show/{{ $skill->id }}"><button class="btn btn-warning">show</button></a>
+                </td>
             </tr>
         @endforeach
     </tbody>

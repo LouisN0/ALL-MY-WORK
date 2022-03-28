@@ -9,4 +9,5 @@ class Skillinfo extends Model
 {
     use HasFactory;
     protected $table = "skillinfos";
+    protected $guarded = ['*'];
 }

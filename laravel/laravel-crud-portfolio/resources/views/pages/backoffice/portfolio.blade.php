@@ -13,6 +13,12 @@
                 <th scope="row">{{ $portfolio->id }}</th>
                 <td>{{ $portfolio->titre }}</td>
                 <td>{{ $portfolio->sstitre }}</td>
+                <td>
+                    <a href="/backoffice/edit/portfolio-edit/{{ $portfolio->id }}"><button class="btn btn-warning">Edit</button></a>
+                </td>
+                <td>
+                    <a href="/backoffice/show/portfolio-show/{{ $portfolio->id }}"><button class="btn btn-warning">show</button></a>
+                </td>
             </tr>
         @endforeach
     </tbody>

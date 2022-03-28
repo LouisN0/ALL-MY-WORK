@@ -9,5 +9,6 @@ class Testimonialinfo extends Model
 {
     use HasFactory;
     protected $table = "testimonialinfos";
+    protected $guarded = ['*'];
     
 }
