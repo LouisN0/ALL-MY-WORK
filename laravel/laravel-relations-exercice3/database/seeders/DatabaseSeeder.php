@@ -21,8 +21,8 @@ class DatabaseSeeder extends Seeder
             EquipeSeeder::class,
             RoleSeeder::class,
         ]);
-        Photo::factory(4)->create();
         Joueur::factory(10)->create();
+        Photo::factory(4)->create();
         
     }
 }

@@ -15,20 +15,42 @@ class JoueurFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition()
-    {   
-        $array = array('male','female');
-        return [
-            "nom"=>$this->faker->firstName(),
-            "prenom"=>$this->faker->lastName(),
-            "age"=>$this->faker->numberBetween(17,36),
-            "telephone"=>$this->faker->phoneNumber(),
-            "mail"=>$this->faker->email(),
-            "genre"=>$array[$this->faker->numberBetween(0,1)],
-            "pays"=>$this->faker->country(),
-            "photo_id"=>$this->faker->numberBetween(1,4),
-            "equipe_id"=>$this->faker->numberBetween(1,3),
-            "role_id"=>$this->faker->numberBetween(1,4)
+    {
+
+        static $equipe = 1;
+        static $role = 1;
+        static $counter = 0;
+
+        if ($counter < 2){
+            $counter++;
+        }
+        else{
+            $role++;
+            if ($counter === 4) {
+                $counter = 0;
+            }
+            else {
+                $counter = 1;
+            }
             
+        }
+        if($role > 4){
+            $role = 1;
+            $equipe++;
+            $counter = 1;
+        }
+
+
+        return [
+            "nom" => $this->faker->lastName(),
+            "prenom" => $this->faker->firstName(),
+            "age" => $this->faker->numberBetween(18,32),
+            "genre" => $this->faker->randomElement(['M','F','X']),
+            "email" => $this->faker->email(),
+            "tel" => $this->faker->phoneNumber(),
+            "pays" => $this->faker->country(),
+            "role_id" => $role,
+            "equipe_id" => $equipe,
         ];
     }
 }

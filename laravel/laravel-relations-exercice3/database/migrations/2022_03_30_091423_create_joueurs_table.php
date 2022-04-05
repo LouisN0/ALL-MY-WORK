@@ -18,11 +18,10 @@ return new class extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->string('age');
-            $table->string('telephone');
-            $table->string('mail');
+            $table->string('tel');
+            $table->string('email');
             $table->string('genre');
             $table->string('pays');
-            $table->foreignId('photo_id')->constrained('photos', 'id')->onDelete('cascade');
             $table->foreignId('role_id')->constrained('roles', 'id')->onDelete('cascade');
             $table->foreignId('equipe_id')->constrained('equipes', 'id')->onDelete('cascade');
             $table->timestamps();

@@ -165,7 +165,7 @@ class JoueurController extends Controller
                 $equipe->nb_remplaçants = $equipe->nb_remplaçants + 1;
             }
         }
-        $photo->img = $request->img->hashName();
+        $photo->img = $request->file('img')->hashName();
         $request->img->storePublicly('img','public');
         $photo->save(); // store_anchor
         $joueur->equipe_id = $request->equipe_id;
