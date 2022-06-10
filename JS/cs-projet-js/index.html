@@ -7,65 +7,435 @@
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
-<body>
-    <!-- premiere section -->
-    <section id="section1">
-        <!-- navbar -->
-        <div id="navbar" class="row navbar border-bottom w-100">
-            <div class="col-sm-4 mt-3 mb-3">
-                <img class='ms-5' src="./public/img/logo.png" alt="">
+<body class="backBlack">
+    
+        <div class="row navbar border-bottom sticky-top m-0">
+            <div class="col-lg-2 mt-3 mb-3 d-sm-flex justify-content-sm-center">
+                <img id="logo" class='ms-lg-5' src="./public/img/logo.png" alt="">
             </div>
-            <div class="col-sm-4 d-flex justify-content-evenly mt-3 mb-3">
-                <a class="aMenu" href="">HOME</a>
+            <div class="col-lg-8 d-flex justify-content-evenly mt-3 mb-3 px-5">
+                <a class="aMenu ms-5" href="">HOME</a>
                 <a class="aMenu" href="">ABOUT</a>
                 <a class="aMenu" href="">SHOP</a>
                 <a class="aMenu" href="">TESTIMONIAL</a>
                 <a class="aMenu" href="">JOURNAL</a>
-                <a class="aMenu" href="">CONTACT</a>
+                <a class="aMenu me-5" href="">CONTACT</a>
+                <div>
+                    <h2 class="fs-6 aMenu">night mode</h2>
+                    <label class="switch mx-3 ">
+                    <input type="checkbox">
+                    <span class="slider round btnNuit"></span>
+                  </label> 
+                </div>
+                
             </div>
-            <div class="col-sm-4 text-end pe-3 mt-3 mb-3">
-                <i class="fas fa-search me-3"></i>
-                <i class="far fa-user me-3"></i>
-                <i class="far fa-heart me-3"></i>
-                <i class="fas fa-shopping-cart me-4"></i>
+            <div class="col-lg-2 text-end mt-3 mb-3 d-sm-flex justify-content-sm-center p-0">
+                <div>
+                   <i class="fas fa-search me-3 icone"></i> 
+                </div>
+                <div>
+                   <i class="far fa-user me-3 icone"></i> 
+                </div>
+                
+                <div>
+                    <i class="far fa-heart me-3 icone"></i>
+                    <div class="bg-dark rond1 rounded-circle align-items-center justify-content-center">0</div>
+                </div>
+                <div>
+                    <i class="fas fa-shopping-cart me-4 icone"></i>
+                    <div class="bg-dark rond1 rounded-circle d-flex align-items-center justify-content-center">0</div>
+                </div>
+                
             </div>
         </div>
-        <!-- contenu page1 -->
-        <div class="row h-75 w-100">
-            <div class="col-sm-2 d-flex align-items-center">
-                <ul class="col-lg-12">
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-dribbble"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                </ul>
-                <div>
-                    <p class="col-lg-12" id="rotate">FOLLOW US</p>
+    
+    <!-- premiere section -->
+    <section id="section1"  class="container-fluid " style="position: relative;">
+        <!-- nav -->
+        
+        
+        <!-- partie central -->
+        <div class="row w-100">
+            <!-- partie 1 -->
+            <div class="col-xs-1 col-sm-2 d-flex align-items-center justify-content-xs-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="ms-3">
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-dribbble"></i></li>
+                            <li><i class="fab fa-linkedin-in"></i></li>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <p id='rotate' class='ms-5'>FOLLOW US</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-8 d-flex align-items-center">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <br><br><br><br><br><br><br><br><br>
-                        <p>NEW COLLECTION 2019</p>
-                        <h2>Brown leather <br> women's bags</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo <br> praesentium obcaecati porro nihil inventore quod?</p>
-                        <div class="row d-flex">
-                            <div class="col-lg-4">
-                                <p>Regular £69.00</p>
-                            </div>
-                            <div class="col-lg-8">
-                                <p>Just £59.00</p>
-                            </div>
-                            <button class="w-25">SHOP WOMEN</button>
+            <!-- partie 2 -->
+            <div class="col-sm-10 col-md-4 d-flex align-items-center justify-content-sm-center">
+                <div class="row w-75">
+                    <div class="col-lg-12 text-sm-center text-lg-start">⎯⎯⎯ &nbsp&nbspNEW COLLECTION 2019</div>
+                    <div id='brown' class="col-lg-12 mt-4 text-sm-center text-lg-start">Brown leather<br> women's bags</div>
+                    <div class="col-lg-12 text-secondary mt-4 text-sm-center text-lg-start">Lorem ipsum is simply dummy text of the printing<br>and typeseting industry printing and industry.</div>
+                    <div id="price" class="col-lg-12 mt-4 text-sm-center text-lg-start"><span id="price2" class="me-3">Regular £69.00</span> Just £59.00</div>
+                    <div class="col-lg-12 mt-4  text-sm-center text-lg-start">
+                        <button class='btnBrown'>SHOP WOMEN</button>
+                    </div>
+                </div>
+            </div>
+            <!-- partie 3 -->
+            <div class="col-sm-10 col-md-5 mb-5 mt-5">
+                <img class="w-100" src="./public/img/one-page-slider-01_1.png" alt="">
+            </div>
+            <!-- partie 4 -->
+            <div class="col-sm-1 col-sm-1 d-flex align-items-center">
+                <ul class="ms-5">
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center container-fluid p-0 m-0" style="position: absolute; bottom: -130px ;width: 100%; right: 0;">
+            <p  style='font-size:170px; color:white;'>WOMENS</p>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section id="section2"  class="container-fluid ">
+        <div class="row mt-5">
+            <!-- partie 1 -->
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="d-flex justify-content-evenly w-75">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-globe me-2 Textnoir"></i>
+                        <p class="m-0 Textnoir">FREE STANDARD SHIPPING</p>
+                    </div>
+                    <div class="d-flex Textnoir">|</div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-wallet me-2 Textnoir"></i>
+                        <p class="m-0 Textnoir">100% MONEY BACK</p>
+                    </div>
+                    <div class="d-flex Textnoir">|</div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-gift me-2 Textnoir"></i>
+                        <p class="m-0 Textnoir">GIFTS FOR MEMBERS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- partie 2 -->
+            <div class="col-lg-12 d-flex justify-content-center mt-5">
+                <div class="row mx-5">
+                    <div class="col-lg-3">
+                        <img class='w-100' src="./public/img/collect/one-page-collection-06.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img class='w-100' src="./public/img/collect/one-page-collection-05.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img class='w-100' src="./public/img/collect/one-page-collection-01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img class='w-100' src="./public/img/collect/one-page-collection-03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- partie 3 -->
+            <div class="col-lg-12 mt-5 mb-5">
+                <div class="row mt-5">
+                    <div class="col-lg-6 d-flex justify-content-end  mt-2">
+                        <div class="textimg">
+                            <p class=' Textnoir'>⎯ ABOUT COMPANY</p>
+                            <p class=' Textnoir'>The principle of desing ⎯ the harmony, rhythm and balance are all the same with interior and fashion design</p>
                         </div>
                     </div>
-                    <div class="col-xs-6">
-                        <img src="./public/img/" alt="">
+                    <div class="col-lg-6 mt-2">
+                        <div class="ms-5 textimg">
+                            <p class=' Textnoir'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias soluta sequi aliquid earum aut enim fugit voluptatibus beatae velit. Eum inventore ipsum ut, reiciendis eveniet, pariatur debitis consequuntur, unde corrupti officia nemo eaque molestias nesciunt deserunt! Blanditiis enim sunt aliquid inventore reprehenderit velit nam, dolore quaerat autem?</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2 p-0"></div>
+        </div>
+    </section>
+    <!-- section 3 -->
+    <section id="section3" class="container-fluid">
+        <div class="row h-100">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img class='w-75' src="./public/img/collect/one-page-img-03.png" alt="">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class=''>⎯ FASHION BRAND THAT CONTEMPORARY</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class=''>Latest celebrity style fashon and outfit trends</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore accusamus, quas dicta ducimus magni voluptatum. Explicabo eaque adipisci in, hic alias obcaecati odit. Iure ipsa omnis non ea delectus maiores aut. Quas ratione laudantium in ipsa. Autem, perferendis magni voluptas quia, exercitationem, delectus numquam neque reiciendis atque inventore vel!</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <button class='btnBrown'>MORE INFORMATION</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section id="products" class=''></section>
+    <!-- section 5 -->
+    <section id="section5" class="container-fluid d-flex align-items-center justify-content-center">
+        <div class='mb-5'>
+            <h2 class="text-center mt-5">Testimonial</h2>
+            <p class="text-center text-secondary">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry printing and industry</p>
+            <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <i id="arrowR" class="fas fa-arrow-left fs-4"></i>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="bg-light p-5">
+                    <h4 class=''>WE LOVE DIGITAL AGENCIES</h4>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero sint provident, reprehenderit dolor quam quasi alias assumenda veniam in officiis similique ratione maxime voluptatum?</p>
+                </div>
+                <div class='d-flex align-items-center mt-4 ms-5'>
+                    <img id="img1" class="rounded-circle rond" src="./public/img/testimonials/image-1-1.png" alt="">
+                    <div class='ms-3'>
+                        <h5 id="nom1" class='fs-6 lh-1 fw-bold Textnoir'>Mattie Stepanek</h5>
+                        <p class='lh-1 fs-6 text-secondary mb-0'>Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="bg-light p-5">
+                    <h4 class=" ">WE LOVE FROM LAYOUT</h4>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero sint provident, reprehenderit dolor quam quasi alias assumenda veniam in officiis similique ratione maxime voluptatum?</p>
+                </div>
+                <div class='d-flex align-items-center mt-4 ms-5'>
+                    <img id="img2" class="rounded-circle rond" src="./public/img/testimonials/image-2.png" alt="">
+                    <div class='ms-3'>
+                        <h5 id="nom2" class='fs-6 lh-1 fw-bold '>Shoko Mugikura</h5>
+                        <p class='lh-1 fs-6 text-secondary mb-0'>Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="bg-light p-5">
+                    <h4 class=" ">I LOVE CREATIVE DESIGN</h4>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero sint provident, reprehenderit dolor quam quasi alias assumenda veniam in officiis similique ratione maxime voluptatum?</p>
+                </div>
+                <div class='d-flex align-items-center mt-4 ms-5'>
+                    <img id="img3" class="rounded-circle rond" src="./public/img/testimonials/image-3.png" alt="">
+                    <div class='ms-3'>
+                        <h5 id="nom3" class='fs-6 lh-1 fw-bold Textnoir'>Alexander Harvard</h5>
+                        <p class='lh-1 fs-6 text-secondary mb-0'>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <i id="arrowL" class="fas fa-arrow-right  fs-4"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- section6 -->
+    <section class="container-fluid ">
+        <h2 class="text-center mt-5 Textnoir">Latest Blog</h2>
+        <p class="text-center text-secondary mb-5">Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry printing and industry</p>
+        <div class='row d-flex justify-content-center mb-5'>
+            <div class="col-lg-3 p-0">
+                <div class='d-flex justify-content-center'>
+                    <img class='w-75' src="./public/img/blog/blog-listing-img63-578x771.jpg" alt="">
+                </div>
+                <div class='d-flex justify-content-start mx-5 mt-4'>
+                    <button class="btnBrown mx-2 textNoir backBlack">PHOTOGRAPHY</button>
+                </div>
+                <div class='mx-5 mt-4'>
+                    <p class='mx-2 Textnoir'>Fashion is part of culture and it's about more than just dress</p>
+                    <p class='mx-2 Textnoir'>─ by Alexis Richards</p>
+                </div>
+            </div>
+            <div class="col-lg-3 p-0">
+                <div class='d-flex justify-content-center'>
+                    <img class='w-75' src="./public/img/blog/blog-listing-img58-578x771.jpg" alt="">
+                </div>
+                <div class='d-flex justify-content-start mx-5 mt-4'>
+                    <button class="btnBrown textNoir backBlack mx-2">PHOTOGRAPHY</button>
+                </div>
+                <div class='mx-5 mt-4'>
+                    <p class='mx-2 Textnoir'>I design to make women feel confident and beatiful fashion</p>
+                    <p class='mx-2 Textnoir'>─ by Alexis Richards</p>
+                </div>
+            </div>
+            <div class="col-lg-3 p-0">
+                <div class='d-flex justify-content-center'>
+                    <img class='w-75' src="./public/img/blog/blog-listing-img59-578x771.jpg" alt="">
+                </div>
+                <div class='d-flex justify-content-start mx-5 mt-4'>
+                    <button class="btnBrown textNoir backBlack mx-2">PHOTOGRAPHY</button>
+                </div>
+                <div class='mx-5 mt-4'>
+                    <p class='mx-2 Textnoir'>A designer is only as good as the star who wears her clothes</p>
+                    <p class='mx-2 Textnoir'>─ by Alexis Richards</p>
+                </div>
+            </div>
+            <div class="col-lg-3 p-0">
+                <div class='d-flex justify-content-center'>
+                    <img class='w-75' src="./public/img/blog/blog-listing-img60-578x771.jpg" alt="">
+                </div>
+                <div class='d-flex justify-content-start mx-5 mt-4'>
+                    <button class="btnBrown textNoir backBlack mx-2">PHOTOGRAPHY</button>
+                </div>
+                <div class='mx-5 mt-4'>
+                    <p class='mx-2 Textnoir'>Chandeliers are marvels of drop dead qhowiness the jewellery</p>
+                    <p class='mx-2 Textnoir'>─ by Alexis Richards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section7 -->
+    <section class="container-fluid section7">
+        <div class="row h-100">
+            <div class="col-lg-4 p-0 img">
+                
+            </div>
+            <div class="col-lg-3 p-0 d-flex align-items-center justify-content-center newC">
+                <div>
+                    <div class='d-flex'>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div> 
+                            <h4 class="">Address details</h4>
+                            <p class="">401 Broadway, 24th Floor<br>Iceland,Iceland 10013</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class='d-flex'>
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div> 
+                                <h4 class=' '>Email address</h4>
+                                <p class=' '>info@domain.com<br>info@domain.com</p>
+                            </div>
+                    </div>
+                    <div>
+                        <div class='d-flex'>
+                            <div>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div> 
+                                <h4 class=' '>Telephone number</h4>
+                                <p class=' '>+1-600-123-000<br>+1-800-222-000</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 p-5 fondplante">
+                <div class='p-4'>
+                    <h3 class='text-white '>Simply fill out the form and we'll be in touch with you soon!</h3>
+                    <div class='d-flex justify-content-center mt-5'>
+                        <input type="text" placeholder="Name*" class='text-white border-secondary w-75 border-0 border-bottom bg-transparent input'>
+                    </div>
+                    <div class='d-flex justify-content-center mt-5'>
+                        <input type="text" placeholder="E-mail*" class='text-white border-secondary w-75 border-0 border-bottom bg-transparent input'>
+                    </div>
+                    <div class='d-flex justify-content-center mt-5'>
+                        <input type="text" placeholder="Subject" class='text-white border-secondary w-75 border-0 border-bottom bg-transparent input'>
+                    </div>
+                    <div class='d-flex justify-content-center mt-5'>
+                        <input type="text" placeholder="Your Message" class='text-white border-secondary w-75 border-0 border-bottom bg-transparent input'>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- section8 -->
+    <section class="container-fluid d-flex align-items-center justify-content-center ">
+        <p class='pInsta Textnoir'>─ INSTAGRAM @HONGO FASHION</p>
+    </section>
+    <!-- section9 -->
+    <section class="container-fluid bg-dark">
+        <div class="row border-bottom border-secondary">
+            <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                <h2 class="text-secondary fs-6">LAST CHANCE TO WIN OUR DISCOUNT!</h2>
+                <div>
+                    <input class="bg-dark text-secondary border-end-0 border-secondary p-0" type="text" placeholder='Enter your email...'>
+                    <button class="bg-dark border-start-0 border-secondary p-0 text-white  Textnoir">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h2 class="text-secondary fs-6 m-0">ON SOCIAL NETWORKS</h2>
+                <i class="fab fa-facebook-f text-secondary mx-2"></i>
+                <i class="fab fa-twitter text-secondary mx-2"></i>
+                <i class="fab fa-linkedin-in text-secondary mx-2"></i>
+                <i class="fab fa-instagram text-secondary mx-2"></i>
+                <i class="fab fa-pinterest-p text-secondary ms-2 me-5"></i>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center text-white">
+        <div class="w-75 mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="./public/img/white-logo.png" alt="">
+                    <p class="bMenu mt-4 Textnoir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium praesentium, mollitia harum atque sit magnam beatae rem. Debitis inventore repellat ut libero alias, unde quo, hic praesentium cupiditate iusto harum error.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="cMenu">Categories</h3>
+                    <div>
+                        <a class="bMenu" href="">Women collection</a>
+                    </div>
+                    <div>
+                        <a class="bMenu" href="">Men collection</a>
+                    </div>
+                    <div><a class="bMenu" href="">Child collection</a></div>
+                    <div><a class="bMenu" href="">Accessories</a></div>
+                    <div><a class="bMenu" href="">Leather shoes</a></div>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="cMenu">Customer</h3>
+                    <div><a class="bMenu" href="">Help and support</a></div>
+                    <div><a class="bMenu" href="">Shipping and delivery</a></div>
+                    <div><a class="bMenu" href="">Payement method</a></div>
+                    <div><a class="bMenu" href="">Terms and conditions</a></div>
+                    <div><a class="bMenu" href="">LOrivacy policy</a></div>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="cMenu">Company</h3>
+                    <div><a class="bMenu" href="">About company</a></div>
+                    <div><a class="bMenu" href="">Our services</a></div>
+                    <div><a class="bMenu" href="">Get the voucher</a></div>
+                    <div><a class="bMenu" href="">Store locator</a></div>
+                    <div><a class="bMenu" href="">Contact us</a></div>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="cMenu">FOLLOW US ON INSTAGRAM</h3>
+                    <div>
+                        <img class='imgFooter' src="./public/img/footer/infa-01.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-02.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-03.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-04.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-05.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-06.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-07.jpg" alt="">
+                        <img class='imgFooter' src="./public/img/footer/infa-08.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row fond"> 
+            <div class="col-lg-6 d-flex justify-content-end align-items-center my-3">
+                <p class="cMenu">2022 HONGO is Proudly Powered by ThemeZaa</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center my-3">
+                <img class='h-50' src="./public/img/footer-payment-icon.png" alt="">
+            </div>
         </div>
     </section>
     <script src="./public/js/main.js"></script>
